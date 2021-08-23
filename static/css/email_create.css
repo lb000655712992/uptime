@@ -1,0 +1,83 @@
+.topnav {
+  overflow: hidden;
+  background-color: #3B6DA3;
+}
+/* main */
+.main { 
+    border: 1px ;
+    font-size: 20px;
+    height: auto;
+    width: 400px;
+	  color: #000000;
+    text-align: center;
+    margin: auto;
+    margin-top:100px;
+    border-radius:20px;
+    max-width:600px;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 800px;
+    height: 700px;
+    border-radius:30px;
+    box-shadow:4px 4px rgb(127,132,167,0.5);
+}
+
+
+  .button{
+    position:relative;
+  }
+
+/* login button */
+.button {
+    background-color: #3B6DA3; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.reset{
+  background-color: #3B6DA3; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.send{
+background-color: #3B6DA3; /* Green */
+border: none;
+color: white;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+}
+
+/* space */
+p{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,96 @@
+
+/* space */
+p{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/* main*/
+.main{
+    border: 1px solid white;
+    height: 450px;
+    width: 30%;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: auto;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom:5%;
+    padding-left: 5%;
+    margin-top:100px;
+    box-shadow:4px 4px rgb(127,132,167,0.5);
+    border-radius:20px;
+
+}
+
+/* login text*/
+.user_login {
+    color:black;
+    font-weight:bold;
+    font-size: 30px;
+    vertical-align: top;
+    line-height: 2.5;
+    font-family:Microsoft JhengHei;
+}
+
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+/* login button*/
+.main button {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	transition-duration: 0.4s;
+	border-radius: 12px;
+}
+.main button:hover{
+	background-color:#3B6DA3;
+	color: white;
+}
+.main a{
+	float: left;
+}
+.options{
+    margin-top:10px;
+}
+.login{
+	background-color: #3B6DA3;
+	width: 25%;
+    font-size: 20px;
+	float: right;
+	color: white;
+}
+.main a{
+	color: #004B97;
+}
+.user_register{
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+	color: #000000;
+	float: left;
+}
+.forget_pw{
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+	color: #000000;
+	float: left;
+}

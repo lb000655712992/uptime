@@ -1,0 +1,315 @@
+openapi: 3.0.1
+info:
+  title: Swagger ReST Article
+  description: This is the swagger file that goes with our server code
+  version: 1.0.0
+servers:
+- url: /api
+
+paths:
+  /config_table:
+    get:
+      tags:
+      - config_table
+      summary: 獲取config_table資訊
+      description: 獲取config_table資訊
+      operationId: backend.config_table_read
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    description: 裝置列表
+                    items:
+                      type: object
+                      properties:
+                        ID:
+                          type: string
+                        Change:
+                          type: string
+                        Threshold:
+                          type: string
+                        Duration:
+                          type: string
+                  JWT_token:
+                    type: string
+                    description: JWT_token
+                  result:
+                    type: string
+                    description: 結果成功與否
+
+    put:
+      tags:
+      - config_table
+      summary: 修改config_table資訊
+      description: 修改config_table資訊
+      operationId: backend.config_table_update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ID:
+                  type: string
+                Change:
+                  type: string
+                Threshold:
+                  type: string
+                Duration:
+                  type: string
+            example:
+              ID: "1"
+              Change: "1"
+              Threshold: "30"
+              Duration: "30"
+        required: true
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: 結果成功與否
+
+  /data_table:
+    get:
+      tags:
+      - data_table
+      summary: 獲取data_table資訊
+      description: 獲取data_table資訊
+      operationId: backend.data_table_read
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    description: 裝置列表
+                    items:
+                      type: object
+                      properties:
+                        ID:
+                          type: string
+                        IP:
+                          type: string
+                        Hostname:
+                          type: string
+                        Username:
+                          type: string
+                        Password:
+                          type: string
+                        Uptime:
+                          type: string
+                  JWT_token:
+                    type: string
+                    description: JWT_token
+                  result:
+                    type: string
+                    description: 結果成功與否
+
+    post:
+      tags:
+      - data_table
+      summary: 新增data_table資訊
+      description: 新增data_table資訊
+      operationId: backend.data_table_create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                IP:
+                  type: string
+                Hostname:
+                  type: string
+                Username:
+                  type: string
+                Password:
+                  type: string
+                Port:
+                  type: string
+                Uptime:
+                  type: string
+                Status:
+                  type: string
+            example:
+              IP: "218.211.169.103"
+              Hostname: "vMX-ndev-R1"
+              Username: "lab"
+              Password: "lab@123"
+              Port: "10022"
+              Uptime: "360"
+              Status: "-"
+
+        required: true
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: 結果成功與否
+    
+    put:
+      tags:
+      - data_table
+      summary: 修改data_table資訊
+      description: 修改data_table資訊
+      operationId: backend.data_table_update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ID:
+                  type: string
+                IP:
+                  type: string
+                Hostname:
+                  type: string
+                Username:
+                  type: string
+                Password:
+                  type: string
+                Port:
+                  type: string
+                Uptime:
+                  type: string
+                Status:
+                  type: string
+            example:
+              ID: "1"
+              IP: "218.211.169.103"
+              Hostname: "vMX-ndev-R1"
+              Username: "lab"
+              Password: "lab@123"
+              Port: "10022"
+              Uptime: "360"
+              Status: "-"
+              
+        required: true
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: 結果成功與否
+
+  /eMail:
+    get:
+      tags:
+      - eMail
+      summary: 獲取eMail資訊
+      description: 獲取eMail資訊
+      operationId: backend.eMail_read
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    description: 裝置列表
+                    items:
+                      type: object
+                      properties:
+                        ID:
+                          type: string
+                        eMail:
+                          type: string
+                  JWT_token:
+                    type: string
+                    description: JWT_token
+                  result:
+                    type: string
+                    description: 結果成功與否
+
+    post:
+      tags:
+      - eMail
+      summary: 新增eMail資訊
+      description: 新增eMail資訊
+      operationId: backend.eMail_create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                eMail:
+                  type: string
+            example:
+              eMail: "lb000655712992@gmail.com" 
+        required: true
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: 結果成功與否
+    
+    put:
+      tags:
+      - eMail
+      summary: 修改eMail資訊
+      description: 修改eMail資訊
+      operationId: backend.eMail_update
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ID:
+                  type: string
+                eMail:
+                  type: string
+            example:
+              ID: "1"
+              eMail: "lb000655712992@gmail.com" 
+        required: true
+      responses:
+        200:
+          description: Successfully read people list operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: 結果成功與否
+  

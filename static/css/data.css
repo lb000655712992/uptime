@@ -1,0 +1,77 @@
+.topnav{
+  background-color:#3B6DA3;
+}
+/* background */
+body {
+  background-color: white;
+}
+
+
+/* main */
+.main { 
+border: 1px solid white;
+height: auto;
+width: 100%;
+background-color: #f2f2f2;
+margin: auto;
+padding-top: 2%;
+padding-right: 5%;
+padding-bottom:5%;
+padding-left: 5%;
+margin-top:5px;
+box-shadow:4px 4px rgb(0,0,0,0.5);
+border-radius:20px;
+
+}
+h1{
+  text-align: left;
+}
+
+/* device list */
+.device_list {
+  color:black;
+  font-size: 20px;
+  text-align:left;
+  line-height: 2.5;
+  font-family:Microsoft JhengHei;
+}
+/*label*/
+label{
+  text-align: left;
+}
+/* list */
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-radius: 8px;
+  width: auto;
+}
+
+th {
+  border: solid 2px white;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+td {
+  font-size: 23px;
+  border: solid 2px white;
+  width: 70%;
+  text-align: center;
+  padding: 8px;
+  color: black;
+}
+
+.title {
+  background-color: #3B6DA3;
+  border: 2px solid white;
+  color: white;
+}
+
+.list {
+  width: 80%;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
